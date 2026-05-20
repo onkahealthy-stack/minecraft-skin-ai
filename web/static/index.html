@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Skin AI Generator</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Minecraft Skin AI Generator</h1>
+            <p>Создавайте уникальные скины с помощью искусственного интеллекта</p>
+        </header>
+
+        <main>
+            <section class="generator">
+                <div class="form-group">
+                    <label for="prompt">Описание скина:</label>
+                    <textarea id="prompt" placeholder="Например: красный рыцарь с мечом" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="style">Стиль:</label>
+                    <select id="style">
+                        <option value="fantasy">🐉 Фэнтези</option>
+                        <option value="cyberpunk">⚡ Киберпанк</option>
+                        <option value="pixel">🎮 Пиксель-арт</option>
+                        <option value="minimalist">⬜ Минимализм</option>
+                        <option value="steampunk">⚙️ Стимпанк</option>
+                        <option value="anime">🌸 Аниме</option>
+                        <option value="horror">👻 Ужас</option>
+                        <option value="nature">🌿 Природа</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">Генерировать</button>
+                    <button id="randomBtn" class="btn btn-secondary">Случайный</button>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Созданные скины</h2>
+                <div id="skinsList" class="skins-grid">
+                    <p class="loading" id="noSkins">Скины еще не созданы. Нажмите "Генерировать" для начала!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Создано с ❤️ для сообщества Minecraft</p>
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
